@@ -1,0 +1,106 @@
+@mixin btns {
+  width: 100px;
+  height: 40px;
+  background: #1A5CFF;
+  box-shadow: 0 8px 20px rgba(26, 92, 255, 0.2);
+  border-radius: 15px;
+  font-weight: 900;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+@mixin ikons{
+  padding: 30px 0 0;
+  width: 14px;
+  height: 14px;
+  color: #9099A3;
+}
+@mixin btno{
+  width: 170px;
+  height: 40px;
+  background: #1A5CFF;
+  box-shadow: 0 8px 20px rgba(26, 92, 255, 0.2);
+  border-radius: 15px;
+  font-weight: 900;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+@mixin porag{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: capitalize;
+  color: #2C3E50;
+letter-spacing: 2px;
+}
+@mixin text{
+  font-weight: 700;
+  font-size: 20px;
+  color: #2C3E50;
+}
+@mixin title{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+  color: #FFFFFF;
+}
+@mixin shadow{
+  width: 500px;
+  height: 300px;
+  background: #FFFFFF;
+  border-radius: 15px;
+}
+@mixin pp{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #2C3E50;
+}
+@mixin number{
+  font-weight: 900;
+  font-size: 24px;
+  color: #9099A3;
+}
+@mixin btn{
+  font-weight: 900;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  width: 180px;
+  height: 40px;
+  background: #1A5CFF;
+  box-shadow: 0 8px 20px rgba(26, 92, 255, 0.2);
+  border-radius: 15px;
+}
+
+@mixin ika {
+  color: dodgerblue;
+}
+@mixin sonic{
+  width: 1040px;
+  height: 400px;
+  background: #FFFFFF;
+  border-radius: 15px;
+}
+@mixin more{
+  width: 401px;
+  height: 40px;
+  background: #1A5CFF;
+  box-shadow: 0 8px 20px rgba(26, 92, 255, 0.2);
+  border-radius: 15px;
+  font-weight: 900;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+@mixin foto{
+  width: 500px;
+  height: 400px;
+  border-radius: 0 15px 15px 0;
+}
+@mixin portfel{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: .5px;
+  color: #000000;
+}

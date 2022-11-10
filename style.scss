@@ -1,0 +1,286 @@
+@import "mixin";
+@import "global";
+#header{
+  position: fixed;
+  height: 82px;
+  background: #1E2024;
+  width: 100%;
+  z-index: 999;
+  .header{
+display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    &--obraz{
+      display: flex;
+      img{width: 28px;
+        height: 40px;}
+      &__poragraf{
+
+      }
+      p{font-weight: 400;
+        font-size: 8px;
+        line-height: 12px;
+        color: #FFFFFF;}
+    }
+    &--title{
+      display: flex;
+      padding: 0 100px 0 0;
+      h1{font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: #9099A3;}
+      &__text{
+        padding: 0 30px}
+    }
+    &--btn{
+      display: flex;
+      align-items: center;
+      &__one{
+        padding: 0 0 0 20px;
+        button{
+
+        }
+        &--btns{
+          @include btns;
+         }
+      }
+      img{width: 21px;
+        height: 20.6px;}
+    }
+  }
+}
+
+#hero{
+  background: url("../img/bgs.png") no-repeat center/cover;
+  min-height: 90vh;
+  padding: 80px 0 0;
+  .hero{
+    display: flex;
+    justify-content: space-between;
+    &--title{
+      display: flex;
+      flex-direction: column;
+      padding: 50px 0 0 30px;
+      &__text{
+        h1{font-weight: 700;
+          font-size: 36px;
+          line-height: 54px;
+          color: #FFFFFF;}
+      }
+      &__poragraf{
+        padding: 20px 0;
+        p{
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          letter-spacing: 2px;
+          line-height: 27px;
+          color: #FFFFFF;
+        }
+      }
+      &__btn{
+        display: flex;
+        &--btno{
+          margin: 0 10px 0 0;
+          @include btno;
+        }
+        &--btns{
+          @include btns;
+        }
+      }
+    }
+    &--club{
+      display: flex;
+      h1{
+      color: #9099A3;
+    }
+      &__sp{
+        padding: 30px 0 0;
+        span{
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+  }
+      }
+      &__text{
+padding: 25px 5px 0;
+      }
+      &__ikon{
+        padding: 30px 0 0;
+          @include ikons;
+
+      }
+}
+  }
+}
+
+#mission{
+  background: #1E2024;
+  height: 737px;
+  .mission{
+    padding: 0 50px;
+    &--title{
+      padding: 10px 0 30px;
+      h1{@include title;}
+    }
+    &--shadow{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 1150px;
+      height: 600px;
+      background: #FFFFFF;
+      border-radius: 15px;
+      &__poragraf{
+        padding: 30px 0 0 30px;
+        &--mesto{
+          padding: 0 0 33px;
+          p {
+            @include porag;}}
+        img{width: 411px;
+          height: 411px;}
+      }
+      &__title{
+        padding: 30px 50px 0 0;
+        &--poragraf{
+          p{
+            @include porag;
+          }
+        }
+        &--text{
+          h1{
+            @include text;}
+          ion-icon{
+            @include ika;}
+          p{
+            @include porag;}
+        }
+        &--family{
+          padding: 10px 0;
+          h1{@include text;}
+        }
+        &--respect{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          p{font-weight: 400;
+            font-size: 14px;
+            line-height: 25px;
+
+            color: #2C3E50;}
+          h3{font-weight: 700;
+            font-size: 14px;
+            color: #2C3E50;
+          }
+          img{width: 64px;
+            height: 64px;}
+        }
+      }
+    }
+  }
+}
+
+#format{
+  background: #1E2024;
+  .format{
+    &--title{
+      padding: 30px 0 10px;
+h1 {
+  @include title;}
+    }
+    &--block{
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 0 0 50px;
+      &__shadow{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+        justify-content: space-between;
+        margin: 10px 25px 40px 25px;
+      @include shadow;
+      &__icon{
+        display: flex;
+        align-items: center;
+        padding: 30px 0 20px;
+        img{
+          width: 50px;
+          height: 50px;}
+        &--title{
+          padding: 0 0 0 360px;
+          h1{@include number;}
+        }
+      }
+      &__title{
+        padding: 0 72px 0 0;
+        &--text{
+          padding: 0 0 10px;
+          h1{@include text;}
+        }
+        p{@include pp;}
+      }
+      &__btn{
+        padding: 0 0 19px 258px;
+        button{
+          @include btn;
+          ion-icon{
+            width: 13px;}
+        }
+
+      }
+
+    }
+    }
+
+  }
+}
+
+#travel{
+  background: #1E2024;
+  padding: 0 0 80px;
+  .travel{
+    &--block{
+      padding: 50px 0 0 80px;
+      &__title{
+        display: flex;
+        justify-content: center;
+        padding: 10px 0 30px;
+        h1{@include title;}
+      }
+      &__shadow{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        @include sonic;
+        &--text{
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          padding: 40px 0 20px 23px;
+          &__title{
+            h1{@include text;}
+            p{@include portfel;}
+          }
+          &__sp{
+            display: flex;
+            span{font-weight: 400;
+              font-size: 14px;
+              line-height: 21px;
+              color: #000000;
+              margin: 0 30px;}
+          }
+          &__btn{
+            padding: 0 44px;
+            button{@include more;}
+          }
+        }
+        &--foto{
+          img{@include foto;}
+        }
+      }
+    }
+  }
+}
